@@ -6,8 +6,9 @@ public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
     float _speed = 7f;
-    public float jumpForce = 20;
-    public float gravity = -9.81f;
+    public float jumpForce = 2000;
+    //public float gravity = -9.81f;
+    bool jumpRefresh = true;
     //loat velocity;
     Rigidbody2D m_Rigidbody;
     void Start()
@@ -35,12 +36,12 @@ public class Player : MonoBehaviour
     {
         // velocity += gravity * Time.deltaTime;
         {
-            if ((Input.GetKeyDown(KeyCode.Space)))
+            if ((Input.GetKeyDown(KeyCode.Space)) && jumpRefresh)
             {
                 //Jump Script
                 Debug.Log("Jump?");
-                m_Rigidbody.AddForce(Vector3.up * 2000);
-
+                m_Rigidbody.AddForce(Vector3.up * jumpForce);
+                SetJumpRefresh(false);
             }
             //float verticalInput = Input.GetAxis("Vertical");
             // direction is a composite of vertical and horizontal
@@ -49,4 +50,25 @@ public class Player : MonoBehaviour
         }
     }
     
+    public void SetJumpRefresh(bool canJump)
+    {
+        jumpRefresh = canJump;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+         
+      //  Debug.Log("Test output coll 11 " + collision.rigidbody.tag);
+      //  Debug.Log("Test output coll 12" + this.tag);
+       // Debug.Log("Test output coll 11" + collision.contacts[0].point.y);
+      //  Debug.Log("Test output coll 12" + this.transform.position);
+        if (collision.rigidbody.tag == "Floor" || collision.rigidbody.tag == "Platform")
+        {
+            if(collision.contacts[0].point.y< this.transform.position.y)
+            {
+                GameObject.Find("Player").GetComponent<Player>().SetJumpRefresh(true);
+            }
+             
+        }
+    }
 }

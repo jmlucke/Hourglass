@@ -9,6 +9,7 @@ TagManager:
   - Wall
   - SandLevel
   - Grain
+  - p_manger
   layers:
   - Default
   - TransparentFX
