@@ -91,6 +91,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 7349286571476884122, guid: b965ffb584279e046a6e62bece9eb8ee, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6e8442dd275001c4f9d167e8d1b8c962, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b965ffb584279e046a6e62bece9eb8ee, type: 3}
 --- !u!4 &4876266661897806227 stripped
@@ -153,6 +157,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -70
       objectReference: {fileID: 0}
+    - target: {fileID: 7349286571476884122, guid: b965ffb584279e046a6e62bece9eb8ee, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6e8442dd275001c4f9d167e8d1b8c962, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b965ffb584279e046a6e62bece9eb8ee, type: 3}
 --- !u!4 &3798973399340034722 stripped
@@ -215,6 +223,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -70
       objectReference: {fileID: 0}
+    - target: {fileID: 7349286571476884122, guid: b965ffb584279e046a6e62bece9eb8ee, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6e8442dd275001c4f9d167e8d1b8c962, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b965ffb584279e046a6e62bece9eb8ee, type: 3}
 --- !u!4 &3798973399716657616 stripped
@@ -277,6 +289,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 7349286571476884122, guid: b965ffb584279e046a6e62bece9eb8ee, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6e8442dd275001c4f9d167e8d1b8c962, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b965ffb584279e046a6e62bece9eb8ee, type: 3}
 --- !u!4 &3798973400123816339 stripped
@@ -339,6 +355,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: MidPointFloor
       objectReference: {fileID: 0}
+    - target: {fileID: 6439450734312966739, guid: 6387fd27b753a8f4b85f1c68ac7d4e2c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6e8442dd275001c4f9d167e8d1b8c962, type: 2}
+    - target: {fileID: 6439450734327701456, guid: 6387fd27b753a8f4b85f1c68ac7d4e2c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6e8442dd275001c4f9d167e8d1b8c962, type: 2}
     m_RemovedComponents:
     - {fileID: -5972047273034385348, guid: 6387fd27b753a8f4b85f1c68ac7d4e2c, type: 3}
     - {fileID: -5449679322262241367, guid: 6387fd27b753a8f4b85f1c68ac7d4e2c, type: 3}
