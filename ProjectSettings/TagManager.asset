@@ -10,6 +10,9 @@ TagManager:
   - SandLevel
   - Grain
   - p_manger
+  - Player_Main
+  - Player_Head
+  - SceneManger
   layers:
   - Default
   - TransparentFX

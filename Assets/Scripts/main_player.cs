@@ -83,11 +83,12 @@ public class main_player : MonoBehaviour
     public void SetJumpRefresh(bool canJump)
     {
         jumpRefresh = canJump;
+        //Debug.Log("Set Jump called");
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Collision occured");
+       // Debug.Log("Collision occured");
         if (collision.rigidbody.tag == "Floor" || collision.rigidbody.tag == "Platform")
         {
             if (collision.contacts[0].point.y < this.transform.position.y)

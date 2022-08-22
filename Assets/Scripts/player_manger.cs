@@ -4,28 +4,15 @@ using UnityEngine;
 
 public class player_manger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+   //for powers ups double jump etc
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
-        if (other.tag == "Player")
+        Debug.Log("collide" + other.tag);
+        if (other.tag == "Player_Main")
         {
-            GameObject.Find("Player").GetComponent<Player>().SetJumpRefresh(true);
-             
-
-
-
+            Debug.Log("collide2" + other.tag);
+            other.gameObject.GetComponent<main_player>().SetJumpRefresh(true);
+            Debug.Log("Set Jump called");
         }
 
     }
